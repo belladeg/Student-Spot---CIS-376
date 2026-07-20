@@ -8,10 +8,10 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="PLACEHOLDER" />
-                  <option name="mobileSdkAppId" value="" />
-                  <option name="projectId" value="" />
-                  <option name="projectNumber" value="" />
+                  <option name="appId" value="com.group6.studentspot" />
+                  <option name="mobileSdkAppId" value="1:265114159283:android:3086b2825f9252ec9808c6" />
+                  <option name="projectId" value="student-spot-cis-376" />
+                  <option name="projectNumber" value="265114159283" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />
