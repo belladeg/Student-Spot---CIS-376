@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace = "com.group6.studentspot"
-    compileSdk = 37
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.group6.studentspot"
         minSdk = 26
-        targetSdk = 37
+        targetSdk = 36
         versionCode = 1
         versionName = "1.0"
 
@@ -26,6 +26,11 @@ android {
             )
         }
     }
+
+    buildFeatures {
+        viewBinding = true
+    }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
