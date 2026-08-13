@@ -9,4 +9,12 @@
     <string name="log_in">Log In</string>
     <string name="or">OR</string>
     <string name="password">Password</string>
+    <string name="select_a_role">Select A Role</string>
+    <string name="student">Student</string>
+    <string name="organization">Organization</string>
+    <string name="create_student_account">Create Student Account</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="create_organization_account">Create Organization Account</string>
+    <string name="name">Name</string>
 </resources>
