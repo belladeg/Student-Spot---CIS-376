@@ -2,11 +2,15 @@ package com.group6.studentspot;
 
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.group6.studentspot.databinding.FragmentCreateAccountBinding;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -23,6 +27,9 @@ public class CreateAccountFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+
+    private MainViewModel viewModel;
+    private FragmentCreateAccountBinding binding;
 
     public CreateAccountFragment() {
         // Required empty public constructor
@@ -56,9 +63,15 @@ public class CreateAccountFragment extends Fragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_create_account, container, false);
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
+                             @Nullable Bundle savedInstanceState) {
+        binding = FragmentCreateAccountBinding.inflate(inflater, container, false);
+        return binding.getRoot();
+    }
+
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+        binding = null;
     }
 }
